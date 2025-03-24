@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logical Confession</title>
+    <title>My Confession</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Logical Confession</h1>
-        <p>After thorough analysis, calculations, and emotional processing, I have come to a logical conclusion...</p>
-        <h2>Would you be my special someone?</h2>
-        
-        <div class="buttons">
-            <button id="yes-btn" onclick="acceptConfession()">Yes</button>
-            <button id="no-btn" onclick="declineConfession()">No</button>
+        <h2 id="question">Do you like me?</h2>
+        <button class="button" onclick="firstYes()">Yes</button>
+        <button class="button" onclick="firstNo()">No</button>
+
+        <div id="follow-up" style="display: none;">
+            <h2 id="follow-up-question"></h2>
+            <button class="button" id="option1" onclick="option1Click()"></button>
+            <button class="button" id="option2" onclick="option2Click()"></button>
         </div>
 
-        <p id="response"></p>
-        <img id="cat-img" src="" alt="" style="display: none; width: 200px;">
+        <img id="display-image" src="" alt="Reaction Image">
     </div>
 
     <script src="script.js"></script>
